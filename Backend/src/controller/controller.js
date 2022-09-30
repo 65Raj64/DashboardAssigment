@@ -42,8 +42,6 @@ const loginUsers = async function (req, res) {
     }else{
         res.send({result:'No Usert found'})
     }
-}else{
-    res.send({result:"No user found"})
 }
 
 
