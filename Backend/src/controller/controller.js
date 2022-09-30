@@ -7,7 +7,7 @@ const model=require("../model/model")
 const registerUser=async function(req,res){
     try {
        
-        let  data = JSON.parse(JSON.stringify(req.body))
+        let  data = JSON.stringify(req.body)
         
    const { phone, name, email, password } = req.body
         let registerUser= await model.create(data)
